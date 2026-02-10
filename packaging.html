@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Packaging Cost Calculation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        table th {
+            background-color: #34495e;
+            color: #fff;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 90%;
+            padding: 5px;
+            font-size: 13px;
+        }
+
+        .readonly {
+            background-color: #eee;
+            border: none;
+        }
+
+        .btn {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .btn-add {
+            background-color: #27ae60;
+            color: white;
+        }
+
+        .btn-delete {
+            background-color: #c0392b;
+            color: white;
+        }
+
+        .total-box {
+            margin-top: 15px;
+            padding: 15px;
+            background: #ecf0f1;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Packaging Cost Calculation</h1>
+
+<!-- Aluminium Bags & Boxes -->
+<div class="container">
+    <h2>A. Aluminium Bags & Boxes</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Package Type</th>
+                <th>Weight / Size</th>
+                <th>No. of Pouches</th>
+                <th>₹ / Pouch</th>
+                <th>Wastage (%)</th>
+                <th>Total No. of Bags</th>
+                <th>Total ₹</th>
+                <th>₹ in Crores</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aluminium Bag</td>
+                <td>50 gm</td>
+                <td><input type="number" value="6897"></td>
+                <td><input type="number" value="3"></td>
+                <td><input type="number" value="10"></td>
+                <td class="readonly">7586</td>
+                <td class="readonly">22758.516</td>
+                <td class="readonly">0.002276</td>
+                <td><button class="btn btn-delete">Delete</button></td>
+            </tr>
+
+            <tr>
+                <td>Aluminium Bag</td>
+                <td>1 kg pouch</td>
+                <td><input type="number" value="34.4826"></td>
+                <td><input type="number" value="3"></td>
+                <td><input type="number" value="10"></td>
+                <td class="readonly">38</td>
+                <td class="readonly">113.79258</td>
+                <td class="readonly">0.0000114</td>
+                <td><button class="btn btn-delete">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <button class="btn btn-add">+ Add Packaging Item</button>
+</div>
+
+<!-- Cardboard Cartons -->
+<div class="container">
+    <h2>B. Cardboard Cartons</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Carton Type</th>
+                <th>Capacity</th>
+                <th>No. of Cartons</th>
+                <th>₹ / Carton</th>
+                <th>Wastage (%)</th>
+                <th>Total Cartons</th>
+                <th>Total ₹</th>
+                <th>₹ in Crores</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cardboard Carton</td>
+                <td>1 Kg (10 kg/carton)</td>
+                <td><input type="number" value="3.44826"></td>
+                <td><input type="number" value="40"></td>
+                <td><input type="number" value="5"></td>
+                <td class="readonly">3</td>
+                <td class="readonly">137.9304</td>
+                <td class="readonly">0.0000138</td>
+                <td><button class="btn btn-delete">Delete</button></td>
+            </tr>
+
+            <tr>
+                <td>Cardboard Carton</td>
+                <td>50 gm (20 pouches)</td>
+                <td><input type="number" value="344.826"></td>
+                <td><input type="number" value="40"></td>
+                <td><input type="number" value="5"></td>
+                <td class="readonly">345</td>
+                <td class="readonly">13793.04</td>
+                <td class="readonly">0.001379</td>
+                <td><button class="btn btn-delete">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Total Packaging Cost -->
+<div class="container">
+    <h2>C. Total Packaging Cost</h2>
+    <div class="total-box">
+        Total Packaging Cost (₹ in Crores): <strong>0.00368</strong>
+    </div>
+</div>
+
+</body>
+</html>
