@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pre-Operative Expenditure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        th {
+            background: #2c3e50;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 95%;
+            padding: 5px;
+            font-size: 13px;
+        }
+
+        .readonly {
+            background: #eee;
+            border: none;
+            font-weight: bold;
+        }
+
+        .total-box {
+            margin-top: 15px;
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Pre-Operative Expenditure</h1>
+
+    <!-- Registration & Licenses -->
+    <div class="container">
+        <h2>A. Registration and Licenses</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr. No</th>
+                    <th>Registration & License</th>
+                    <th>Issuing Authority</th>
+                    <th>Approx. Cost (₹ in Crores)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Land Conversion Charges</td>
+                    <td>District Collector</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Land Transfer Fees</td>
+                    <td>Government of State</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Registration of Private Limited Company</td>
+                    <td>Registrar of Companies (GOI)</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Company Secretary Fees</td>
+                    <td>—</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Factory License</td>
+                    <td>Chief Inspector of Factories</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Fire Department License</td>
+                    <td>Divisional Magistrate</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Pollution Control Board NOC</td>
+                    <td>PCB District</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Archeological Department NOC</td>
+                    <td>Archeological Dept. District</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Meteorological Department NOC</td>
+                    <td>Meteorological Dept. District</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Industrial Water</td>
+                    <td>Water Supply Department</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Trade License</td>
+                    <td>Gram Panchayat</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Health License</td>
+                    <td>Municipal Corporation</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>GST Registration</td>
+                    <td>Commissioner of Tax</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Excise Registration</td>
+                    <td>Central Excise District</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Employees Insurance & PPF</td>
+                    <td>Labor Commissioner</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Professional Tax</td>
+                    <td>Professional Tax Commissioner</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Food Processing License</td>
+                    <td>Commissioner of Food Processing</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Forest License</td>
+                    <td>Divisional Forest Officer</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Town & Country Planning Clearance</td>
+                    <td>Zilla Parishad</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>DG Set Installation Clearance</td>
+                    <td>Power Department</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Discom License & Permission</td>
+                    <td>Electricity Board</td>
+                    <td><input type="number" value="0.0005"></td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>Import Export License</td>
+                    <td>Online Registration</td>
+                    <td><input type="number" value="0.0007"></td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>ISO 22000</td>
+                    <td>ISO Issuing Authority</td>
+                    <td><input type="number" value="0.005"></td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>HACCP</td>
+                    <td>HACCP Authority</td>
+                    <td><input type="number" value="0.006"></td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>Storage of Essential Commodities License</td>
+                    <td>District Food Supply Office</td>
+                    <td><input type="number" value="0.001"></td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>Agency Fees</td>
+                    <td>—</td>
+                    <td><input type="number" value="0.01"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="total-box">
+            Total Registration & License Cost (₹ Cr): <strong>0.02115</strong>
+        </div>
+    </div>
+
+    <!-- Consultant & Travel -->
+    <div class="container">
+        <h2>B. Consultant & Other Expenses</h2>
+
+        <table>
+            <tr>
+                <th>Expense Type</th>
+                <th>Description</th>
+                <th>₹ in Crores</th>
+            </tr>
+            <tr>
+                <td>Project Consultant Fees</td>
+                <td>DPR</td>
+                <td><input type="number" value="0.07"></td>
+            </tr>
+            <tr>
+                <td>Travel & Other Expenses</td>
+                <td>—</td>
+                <td><input type="number" value="0.02"></td>
+            </tr>
+        </table>
+
+        <div class="total-box">
+            Sub-Total (₹ Cr): <strong>0.09115</strong><br>
+            Total Pre-Operative Expenditure (₹ Cr): <strong>0.11115</strong>
+        </div>
+    </div>
+
+</body>
+
+</html>
